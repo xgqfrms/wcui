@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="xgqfrms">
+  <meta name="generator" content="VS code">
+  <!-- PWA -->
+  <meta name="version" content="pwa--app-v1">
+  <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="./favicon.png" type="image/png" />
+  <link rel="manifest" href="./manifest.json"> -->
+  <meta name="description" content="A PWA  App">
+  <meta name="theme-color" content="#2F3BA2" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="PWA  App">
+  <!-- <link rel="apple-touch-icon" href="./icons/icon-152x152.png"> -->
+  <!-- PWA -->
+  <title>WCUI test</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <!-- <link rel="stylesheet" href="./index.css"> -->
+  <script src="../dist/wcui/index.min.js"></script>
+  <style>
+    .outer-class {
+        z-index: 10;
+    }
+    .outer-class__hide {
+        display: none;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <h1>WCUI test</h1>
+  </header>
+  <main>
+    <article>
+      <section>
+       <h2> wcui-toast</h2>
+       <button id="button">Show Toast</button>
+       <!-- test -->
+       <wcui-toast content="this is one custom `Toast` components"></wcui-toast>
+       <wcui-toast id="toast" class="outer-class outer-class__hide" content="这是一个自定义的Toast组件"></wcui-toast>
+        <!-- <script src="./dist/webc-toast.umd.js"></script> -->
+        <script>
+          const btn = document.querySelector('#button');
+          btn.addEventListener('click', () => {
+            const toast = document.querySelector('#toast');
+            const classList = toast.classList;
+            classList.toggle('outer-class__hide');
+            // toast.classList.toggle('outer-class__hide');
+          });
+        </script>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <p>copyright&copy; xgqfrms 2022</p>
+  </footer>
+  <!-- js -->
+  <script>
+    const log = console.log;
+  </script>
+</body>
+</html>
