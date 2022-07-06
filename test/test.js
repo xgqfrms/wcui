@@ -14,3 +14,8 @@ const callback = (type = '') => {
 }
 
 window.callback = callback;
+
+const time = document.querySelector('#time');
+setInterval(() => {
+  time.setAttribute('datetime', new Date());
+}, 1000);

@@ -14,9 +14,12 @@ console.log(`\n%cWCUI 🚀 ${window.wcui}\n`, style);
 // 手动导入新组件
 import Toast from './components/toast.js';
 import Button from './components/button.js';
+import TimeFormatter from './components/time-formatter.js';
+
 
 // 注册自定义组件
 if(window.customElements) {
   customElements.define('wcui-toast', Toast);
-  customElements.define('wcui-button', Button)
+  customElements.define('wcui-button', Button);
+  customElements.define("wcui-time-formatter", TimeFormatter);
 }
