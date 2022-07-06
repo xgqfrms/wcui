@@ -47,7 +47,6 @@ class Toast extends HTMLElement {
   }
   createStyle() {
     const show = this.getAttribute('show');
-    console.log('show =', show);
     const style = document.createElement('style');
     style.textContent = `
       .toast-wrapper {

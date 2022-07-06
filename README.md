@@ -21,7 +21,7 @@ https://www.npmjs.com/package/@xgqfrms/wcui
 <!-- step1. import wcui -->
 <script src="../dist/wcui/index.min.js"></script>
 
-<!-- step3. use -->
+<!-- step2. use wcui-??? -->
 <!-- wcui-toast -->
 <wcui-toast content="this is one custom `Toast` components"></wcui-toast>
 
@@ -33,22 +33,35 @@ https://www.npmjs.com/package/@xgqfrms/wcui
   </span>
 </wcui-button>
 <wcui-button type="success">
-  <span slot="text">
+  <span slot="text" onclick="callback('success')">
     成功按钮
   </span>
 </wcui-button>
-<wcui-button type="warning">
+<wcui-button type="warning" callback="callback">
   <span slot="text">
     警告按钮
   </span>
 </wcui-button>
-<wcui-button type="danger">
+<wcui-button type="danger" callback="callback">
   <span slot="text">
     危险按钮
   </span>
 </wcui-button>
 
 ```
+
+```js
+const callback = (type = '') => {
+  console.log('button type', type);
+  alert(`🎉 button type =${type}`);
+}
+
+window.callback = callback;
+
+```
+
+<!-- ![](https://img2022.cnblogs.com/blog/740516/202207/740516-20220706163918327-2102287624.png) -->
+![](https://user-images.githubusercontent.com/7291672/177508468-07c709a8-edd3-4e25-8048-a3996a0c92e9.png)
 
 ## wxui components table
 
@@ -66,6 +79,8 @@ https://www.npmjs.com/package/@xgqfrms/wcui
 
 ## contributes
 
+> github
+
 ```sh
 # dev
 $ npm run dev
@@ -75,11 +90,12 @@ $ npm run build
 
 ```
 
+> npm
 
 ```sh
 # publish
 $ npm publish
-$ npm publish --access=public
+# $ npm publish --access=public
 
 ```
 
