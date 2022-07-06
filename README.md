@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/webcomponents.org-published-blue.svg) [![](https://img.shields.io/badge/webcomponents.org-@xgqfrms/wcui-deepgreen.svg)](https://www.webcomponents.org/element/@xgqfrms/wcui)
+
 # Web Components UI
 
 > WCUI
@@ -63,18 +65,62 @@ window.callback = callback;
 <!-- ![](https://img2022.cnblogs.com/blog/740516/202207/740516-20220706163918327-2102287624.png) -->
 ![](https://user-images.githubusercontent.com/7291672/177508468-07c709a8-edd3-4e25-8048-a3996a0c92e9.png)
 
-## wxui components table
+
+
+## live demo
+
+<!--
+```
+<custom-element-demo>
+  <template>
+    <link rel="import" href="./test/index.html">
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+
+```html
+  <!-- wcui-button -->
+  <div class="box">
+    <wcui-button></wcui-button>
+    <wcui-button type="primary">
+      <span slot="text">
+        默认按钮
+      </span>
+    </wcui-button>
+    <wcui-button type="success">
+      <!-- onclick -->
+      <span slot="text" onclick="callback('success')">
+        成功按钮
+      </span>
+    </wcui-button>
+    <!-- callback -->
+    <wcui-button type="warning" callback="callback">
+      <span slot="text">
+        警告按钮
+      </span>
+    </wcui-button>
+    <wcui-button type="danger" callback="callback">
+      <span slot="text">
+        危险按钮
+      </span>
+    </wcui-button>
+  </div>
+```
+
+
+## wcui components table
 
 
 |name|props|type|default|
 |-|-|-|-|
 |wcui-toast|content|string|''|
 |wcui-button|type|'primary'/'success'/'warning'/'danger'|'primary'|
+|wcui-time-formatter|datetime / year / month / day/ hour / minute / second / time-zone-nam|string|Date.now()|
 |-|-|-|-|
 |-|-|-|-|
 |-|-|-|-|
-|-|-|-|-|
-
 
 
 ## contributes

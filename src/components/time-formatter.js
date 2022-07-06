@@ -7,11 +7,13 @@ class TimeFormatter extends HTMLElement {
   }
   // DOM 已经插入文档中
   connectedCallback() {
+    console.log('this.innerHTML =', this.innerHTML);
     if (!this.rendered) {
       this.render();
       this.rendered = true;
       console.log('first render', 4);
     }
+    console.log('this.innerHTML new =', this.innerHTML)
     console.log('DOM 插入文档', 5);
   }
   // 属性监听列表

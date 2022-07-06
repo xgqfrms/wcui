@@ -13,6 +13,7 @@ const templateString = `
         color: #fff;
         box-shadow: 0 2px #00000004;
         cursor: pointer;
+        margin: 5px;
       }
       .wcui-button-success {
         border: 1px solid #14fa4a;
