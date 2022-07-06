@@ -18,11 +18,35 @@ https://www.npmjs.com/package/@xgqfrms/wcui
 ## usage
 
 ```html
-<!-- import wcui -->
+<!-- step1. import wcui -->
 <script src="../dist/wcui/index.min.js"></script>
 
-<!-- use wcui-??? -->
+<!-- step3. use -->
+<!-- wcui-toast -->
 <wcui-toast content="this is one custom `Toast` components"></wcui-toast>
+
+<!-- wcui-button -->
+<wcui-button></wcui-button>
+<wcui-button type="primary">
+  <span slot="text">
+    默认按钮
+  </span>
+</wcui-button>
+<wcui-button type="success">
+  <span slot="text">
+    成功按钮
+  </span>
+</wcui-button>
+<wcui-button type="warning">
+  <span slot="text">
+    警告按钮
+  </span>
+</wcui-button>
+<wcui-button type="danger">
+  <span slot="text">
+    危险按钮
+  </span>
+</wcui-button>
 
 ```
 
@@ -32,7 +56,7 @@ https://www.npmjs.com/package/@xgqfrms/wcui
 |name|props|type|default|
 |-|-|-|-|
 |wcui-toast|content|string|''|
-|-|-|-|-|
+|wcui-button|type|'primary'/'success'/'warning'/'danger'|'primary'|
 |-|-|-|-|
 |-|-|-|-|
 |-|-|-|-|
@@ -51,7 +75,6 @@ $ npm run build
 
 ```
 
-```
 
 ```sh
 # publish
