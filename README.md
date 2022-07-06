@@ -4,6 +4,8 @@
 
 > WCUI
 
+https://www.webcomponents.org/element/@xgqfrms/wcui
+
 ## install
 
 ```sh
@@ -24,6 +26,7 @@ https://www.npmjs.com/package/@xgqfrms/wcui
 <script src="../dist/wcui/index.min.js"></script>
 
 <!-- step2. use wcui-??? -->
+
 <!-- wcui-toast -->
 <wcui-toast content="this is one custom `Toast` components"></wcui-toast>
 
@@ -50,6 +53,12 @@ https://www.npmjs.com/package/@xgqfrms/wcui
   </span>
 </wcui-button>
 
+ <!-- wcui-time-formatter -->
+<wcui-time-formatter id="time"
+  hour="numeric"
+  minute="numeric"
+  second="numeric">
+</wcui-time-formatter>
 ```
 
 ```js
