@@ -44,21 +44,35 @@
   <main>
     <article>
       <section>
-       <h2> wcui-toast</h2>
-       <button id="button">Show Toast</button>
-       <!-- test -->
-       <wcui-toast content="this is one custom `Toast` components"></wcui-toast>
-       <wcui-toast id="toast" class="outer-class outer-class__hide" content="这是一个自定义的Toast组件"></wcui-toast>
-        <!-- <script src="./dist/webc-toast.umd.js"></script> -->
-        <script>
-          const btn = document.querySelector('#button');
-          btn.addEventListener('click', () => {
-            const toast = document.querySelector('#toast');
-            const classList = toast.classList;
-            classList.toggle('outer-class__hide');
-            // toast.classList.toggle('outer-class__hide');
-          });
-        </script>
+        <h2> wcui-toast</h2>
+        <button id="button">Show Toast</button>
+        <!-- wcui-toast -->
+        <wcui-toast content="this is one custom `Toast` components"></wcui-toast>
+        <wcui-toast id="toast" class="outer-class outer-class__hide" content="这是一个自定义的Toast组件"></wcui-toast>
+        <!-- wcui-button -->
+        <wcui-button></wcui-button>
+        <wcui-button type="primary">
+          <span slot="text">
+            默认按钮
+          </span>
+        </wcui-button>
+        <wcui-button type="success">
+          <!-- onclick -->
+          <span slot="text" onclick="callback('success')">
+            成功按钮
+          </span>
+        </wcui-button>
+        <!-- callback -->
+        <wcui-button type="warning" callback="callback">
+          <span slot="text">
+            警告按钮
+          </span>
+        </wcui-button>
+        <wcui-button type="danger" callback="callback">
+          <span slot="text">
+            危险按钮
+          </span>
+        </wcui-button>
       </section>
     </article>
   </main>
@@ -66,8 +80,7 @@
     <p>copyright&copy; xgqfrms 2022</p>
   </footer>
   <!-- js -->
-  <script>
-    const log = console.log;
-  </script>
+  <!-- <script src="./dist/webc-toast.umd.js"></script> -->
+  <script src="./test.js"></script>
 </body>
 </html>

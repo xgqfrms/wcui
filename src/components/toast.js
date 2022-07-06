@@ -28,7 +28,7 @@ class Toast extends HTMLElement {
     // DOM
     const template = this.createTemplate();
     shadow.appendChild(template);
-    console.log('Toast init finished✅');
+    // console.log('Toast init finished✅');
   }
   createTemplate() {
     const wrapper = document.createElement('div');
