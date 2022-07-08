@@ -23,3 +23,5 @@ if(window.customElements) {
   customElements.define('wcui-button', Button);
   customElements.define("wcui-time-formatter", TimeFormatter);
 }
+
+console.log('npm run build');

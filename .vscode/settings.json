@@ -88,5 +88,8 @@
   "peacock.color": "#00b3e6",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
+  },
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "file:///Users/xgqfrms-mbp/Documents/GitHub/wcui/.github/workflows/build.yml"
   }
 }
