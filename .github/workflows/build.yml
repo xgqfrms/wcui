@@ -27,10 +27,13 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo "npm build ..."
-    
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
+        run: echo "npm install ..."
+
+      - name: step1 install
+        # run: npm ci
+        run: npm install
+
+      - name: step2 build
         run: npm run build
 
       # Runs a set of commands using the runners shell
@@ -38,3 +41,5 @@ jobs:
         run: |
           echo "npm build finished ✅"
           echo "npm publish ?"
+          echo "npm whoami"
+          # echo "npm login" $PWD
