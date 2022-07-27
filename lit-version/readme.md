@@ -23,6 +23,26 @@ https://github.com/xgqfrms/wcui/issues/8#issuecomment-1196269085
 Error: Invalid value for option "output.dir" - you must set either "output.file" for a `single-file` build or "output.dir" when generating `multiple chunks`.
 
 
+`iife`
+
+These commands assume the entry point to your application is named `main.js`, and that you'd like all imports compiled into a single file named `bundle.js`.
+
+```md
+For browsers:
+# compile to a <script> containing a self-executing function ('iife')
+rollup main.js --file bundle.js --format iife
+
+For Node.js:
+# compile to a CommonJS module ('cjs')
+rollup main.js --file bundle.js --format `cjs`
+
+For both `browsers` and` Node.js`:
+
+# UMD format requires a bundle name
+rollup main.js --file bundle.js --format umd --name "myBundle"
+```
+
+
 
 ## TS
 
@@ -99,3 +119,8 @@ https://www.npmjs.com/package/rollup-plugin-copy
 }
 
 ```
+
+## npm ?
+
+lit 作为外部依赖使用，不需要打进包里面 ？？？
+

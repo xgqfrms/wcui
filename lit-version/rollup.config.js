@@ -29,10 +29,26 @@ export default [
   {
     input,
     output: {
-      name: pkg.main,
-      file: 'dist/index.esm.js',
+      name: 'wcui_iife',
+      file: pkg.iife,
+      // immediately-invoked function expression — suitable for <script> tags
+      format: 'iife', 
+      sourcemap: true,
+    },
+    plugins: [
+      nodeResolve(),
+      typescript(),
+    ],
+  },
+  {
+    input,
+    output: {
+      name: 'wcui_esm',
+      file: pkg.main,
+      // file: 'dist/index.esm.js',
       // dir: 'dist',
       format: 'esm',
+      sourcemap: true,
     },
     // external: ['lit'],
     plugins: [
@@ -45,11 +61,15 @@ export default [
   {
     input,
     output: {
-      name: pkg.browser,
-      file: 'dist/index.umd.js',
+      // cdn 方式引入时, 挂载在 window 对象上的名称
+      name: 'wcui_umd',
+      file: pkg.browser,
+      // file 与 dir 只能选择一种
+      // file: 'dist/index.umd.js',
       // dir: 'dist',
       format: 'umd',
       // globals: 'lit',
+      sourcemap: true,
     },
     // external: ['lit'],
     plugins: [

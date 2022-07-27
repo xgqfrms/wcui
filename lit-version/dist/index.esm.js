@@ -89,3 +89,4 @@ MyElement = __decorate([
 ], MyElement);
 
 export { MyElement };
+//# sourceMappingURL=index.esm.js.map
