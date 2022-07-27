@@ -1,10 +1,11 @@
 {
-  "name": "lit-version-wcui",
-  "version": "1.0.4",
+  "name": "lit-wcui",
+  "version": "1.0.2",
   "description": "lit version wcui",
   "main": "./dist/index.esm.js",
   "browser": "./dist/index.umd.js",
   "iife": "./dist/index.iife.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "yarn rm && yarn cp && rollup -w -c rollup.config.js",
     "build": "yarn rm && yarn tsc && rollup -c",
@@ -17,6 +18,7 @@
   },
   "keywords": [
     "lit",
+    "web components",
     "wcui"
   ],
   "files": [
