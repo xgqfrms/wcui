@@ -4,6 +4,7 @@ import { customElement, property } from 'lit/decorators.js';
 interface WCUI {
   version: string;
 }
+
 @customElement('wcui-element')
 export class WCUIElement extends LitElement implements WCUI {
   @property()
