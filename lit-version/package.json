@@ -1,0 +1,17 @@
+{
+  "name": "lit-version",
+  "version": "1.0.0",
+  "description": "lit",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lit"
+  ],
+  "author": "xgqfrms",
+  "license": "MIT",
+  "dependencies": {
+    "lit": "^2.2.8"
+  }
+}
