@@ -39,13 +39,23 @@ import 'lit-wcui';
 
 2. CDN
 
+> load any project hosted on npm
+
+https://cdn.jsdelivr.net/npm/package@version/file
+
+https://cdn.jsdelivr.net/npm/lit-wcui@1.0.4/dist/index.umd.js
+https://cdn.jsdelivr.net/npm/lit-wcui@1.0.4/dist/index.esm.js
+https://cdn.jsdelivr.net/npm/lit-wcui@1.0.4/dist/index.iife.js
+
+https://cdn.jsdelivr.net/npm/lit-wcui@1.0.4/dist/index.d.ts
+
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <script type="module" src="./lit-wcui/dist/index.umd.js"></script>
-    <!-- <script type="module" src="./lit-wcui/dist/index.esm.js"></script> -->
-    <!-- <script src="./lit-wcui/dist/index.iife.js"></script> -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/lit-wcui@1.0.4/dist/index.umd.js"></script>
+    <!-- <script type="module" src="https://cdn.jsdelivr.net/npm/lit-wcui@1.0.4/dist/index.esm.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/lit-wcui@1.0.4/dist/index.iife.js"></script> -->
     <style>
       body {
         font-family: 'Open Sans', sans-serif;
@@ -67,6 +77,9 @@ import 'lit-wcui';
 https://codesandbox.io/s/lit-wcui-demo-st29pp
 
 https://codesandbox.io/embed/zealous-cache-st29pp?fontsize=14&hidenavigation=1&theme=dark
+
+![lit-wcui live demo ](https://user-images.githubusercontent.com/7291672/181284952-f78863ab-359e-4101-aad1-a6ca81222eaa.png)
+
 
 <!-- <iframe src="https://codesandbox.io/embed/zealous-cache-st29pp?fontsize=14&hidenavigation=1&theme=dark"
   style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"

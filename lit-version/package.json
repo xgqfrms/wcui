@@ -1,7 +1,7 @@
 {
   "name": "lit-wcui",
-  "version": "1.0.2",
-  "description": "lit version wcui",
+  "version": "1.0.4",
+  "description": "lit version wcui 🚀",
   "main": "./dist/index.esm.js",
   "browser": "./dist/index.umd.js",
   "iife": "./dist/index.iife.js",
@@ -19,7 +19,12 @@
   "keywords": [
     "lit",
     "web components",
-    "wcui"
+    "wcui",
+    "typescript",
+    "cdn",
+    "umd",
+    "esm",
+    "iife"
   ],
   "files": [
     "dist/*",
