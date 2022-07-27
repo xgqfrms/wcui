@@ -66,27 +66,24 @@ const i=(i,e)=>"method"===e.kind&&e.descriptor&&!("value"in e.descriptor)?{...e,
  * SPDX-License-Identifier: BSD-3-Clause
  */var n;null!=(null===(n=window.HTMLSlotElement)||void 0===n?void 0:n.prototype.assignedElements)?(o,n)=>o.assignedElements(n):(o,n)=>o.assignedNodes(n).filter((o=>o.nodeType===Node.ELEMENT_NODE));
 
-// customElements.define()
-// https://lit.dev/docs/components/decorators/
-// https://lit.dev/docs/components/properties/
-let MyElement = class MyElement extends s {
+let WCUIElement = class WCUIElement extends s {
     constructor() {
         super(...arguments);
         this.version = '0.0.1';
     }
     render() {
         return $ `
-      <p>Welcome to the Lit tutorial!</p>
+      <h1>Welcome to the Lit Web Component!</h1>
       <p>This version is <mark>v${this.version}</mark>.</p>
     `;
     }
 };
 __decorate([
     e()
-], MyElement.prototype, "version", void 0);
-MyElement = __decorate([
-    n$1('my-element')
-], MyElement);
+], WCUIElement.prototype, "version", void 0);
+WCUIElement = __decorate([
+    n$1('wcui-element')
+], WCUIElement);
 
-export { MyElement };
+export { WCUIElement };
 //# sourceMappingURL=index.esm.js.map

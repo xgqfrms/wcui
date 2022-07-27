@@ -1,17 +1,17 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-// customElements.define()
-// https://lit.dev/docs/components/decorators/
-// https://lit.dev/docs/components/properties/
-@customElement('my-element')
-export class MyElement extends LitElement {
+interface WCUI {
+  version: string;
+}
+@customElement('wcui-element')
+export class WCUIElement extends LitElement implements WCUI {
   @property()
   version = '0.0.1';
 
   render() {
     return html`
-      <p>Welcome to the Lit tutorial!</p>
+      <h1>Welcome to the Lit Web Component!</h1>
       <p>This version is <mark>v${this.version}</mark>.</p>
     `;
   }

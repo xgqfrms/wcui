@@ -72,27 +72,24 @@
      * SPDX-License-Identifier: BSD-3-Clause
      */var n;null!=(null===(n=window.HTMLSlotElement)||void 0===n?void 0:n.prototype.assignedElements)?(o,n)=>o.assignedElements(n):(o,n)=>o.assignedNodes(n).filter((o=>o.nodeType===Node.ELEMENT_NODE));
 
-    // customElements.define()
-    // https://lit.dev/docs/components/decorators/
-    // https://lit.dev/docs/components/properties/
-    exports.MyElement = class MyElement extends s {
+    exports.WCUIElement = class WCUIElement extends s {
         constructor() {
             super(...arguments);
             this.version = '0.0.1';
         }
         render() {
             return $ `
-      <p>Welcome to the Lit tutorial!</p>
+      <h1>Welcome to the Lit Web Component!</h1>
       <p>This version is <mark>v${this.version}</mark>.</p>
     `;
         }
     };
     __decorate([
         e()
-    ], exports.MyElement.prototype, "version", void 0);
-    exports.MyElement = __decorate([
-        n$1('my-element')
-    ], exports.MyElement);
+    ], exports.WCUIElement.prototype, "version", void 0);
+    exports.WCUIElement = __decorate([
+        n$1('wcui-element')
+    ], exports.WCUIElement);
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

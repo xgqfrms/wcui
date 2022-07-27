@@ -5,6 +5,9 @@ import {LitElement, html} from 'https://cdn.jsdelivr.net/gh/lit/dist@2.2.8/all/l
 // import {LitElement, html} from '../node_modules/lit/index.js';
 // import {LitElement, html} from './node_modules/lit/index.js';
 
+// customElements.define()
+// https://lit.dev/docs/components/decorators/
+// https://lit.dev/docs/components/properties/
 export class MyElement extends LitElement {
   static properties = {
     version: '',
