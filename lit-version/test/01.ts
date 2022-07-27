@@ -1,6 +1,9 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
+// customElements.define()
+// https://lit.dev/docs/components/decorators/
+// https://lit.dev/docs/components/properties/
 @customElement('my-element')
 export class MyElement extends LitElement {
   @property()
