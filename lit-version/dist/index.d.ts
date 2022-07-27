@@ -7,3 +7,4 @@ export declare class WCUIElement extends LitElement implements WCUI {
     render(): import("lit-html").TemplateResult<1>;
 }
 export {};
+//# sourceMappingURL=index.d.ts.map
