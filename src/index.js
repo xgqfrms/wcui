@@ -1,6 +1,8 @@
+// json
 import * as pkg from "../package.json";
 
 window.wcui = `${pkg.name}@${pkg.version}`;
+
 const style = `
   color: #0f0;
   background: #000;
@@ -8,6 +10,7 @@ const style = `
   line-height: 1.5rem;
   font-size: 23px;
 `;
+
 console.log(`\n%cWCUI 🚀 ${window.wcui}\n`, style);
 
 // TODO: auto get component's name using shell script, like element-ui

@@ -1,17 +1,41 @@
 {
-  "name": "lit-version",
+  "name": "lit-version-wcui",
   "version": "1.0.0",
-  "description": "lit",
-  "main": "src/index.js",
+  "description": "lit wcui",
+  "main": "./dist/index.esm.js",
+  "browser": "./dist/index.umd.js",
   "scripts": {
+    "dev": "yarn rm && yarn cp && rollup -w -c rollup.config.js",
+    "build": "yarn rm && rollup -c",
+    "tsw": "tsc -w",
+    "rm": "rm -rf ./dist/*.*",
+    "cp": "cp ./test/index.html ./dist/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "lit"
+    "lit",
+    "wcui"
   ],
+  "files": [
+    "dist/*",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgqfrms/wcui.git"
+  },
   "author": "xgqfrms",
   "license": "MIT",
   "dependencies": {
-    "lit": "^2.2.8"
+    "lit": "^2.2.8",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-typescript": "^8.3.3",
+    "rollup": "^2.77.1",
+    "tslib": "^2.4.0"
   }
 }
