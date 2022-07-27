@@ -11,14 +11,44 @@ https://github.com/rollup/plugins/tree/master/packages/typescript
 
 typescript({ compilerOptions: {lib: ["es5", "es6", "dom"], target: "es5"}})
 
-
 <!-- https://github.com/ezolenko/rollup-plugin-typescript2 -->
+
+> 如何使用 rollup 把 lit 依赖打进包里?
+
+`@rollup/plugin-node-resolve`
+
+https://github.com/xgqfrms/wcui/issues/8#issuecomment-1196269085
+
+
+Error: Invalid value for option "output.dir" - you must set either "output.file" for a `single-file` build or "output.dir" when generating `multiple chunks`.
+
+
+
 ## TS
 
 Error: `@rollup/plugin-typescript`: The module kind should be 'ES2015' or 'ESNext, found: 'UMD'
 
 [!] (plugin typescript) Error: @rollup/plugin-typescript: Could not find module 'tslib', which is required by this plugin.
 
+```js
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "ESNext",
+    "target": "es2017",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "strict": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "sourceMap": true,
+    "skipLibCheck": true, 
+    "forceConsistentCasingInFileNames": true
+  }
+}
+```
 
 ## decorators
 
@@ -47,3 +77,25 @@ $ yarn add -D rimraf
 https://www.npmjs.com/package/rimraf
 
 https://www.npmjs.com/package/rollup-plugin-copy
+
+
+
+## OK
+
+```js
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "strict": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "skipLibCheck": true, 
+    "forceConsistentCasingInFileNames": true
+  }
+}
+
+```

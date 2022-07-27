@@ -1,15 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
+    "target": "esnext",
+    "module": "esnext",
     "moduleResolution": "node",
     "rootDir": "./src",
     "outDir": "./dist",
     "strict": true,
     "experimentalDecorators": true,
     "useDefineForClassFields": false,
-    "emitDecoratorMetadata": true,
-    "sourceMap": true,
     "skipLibCheck": true, 
     "forceConsistentCasingInFileNames": true
   }

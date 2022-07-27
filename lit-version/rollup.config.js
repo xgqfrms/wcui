@@ -5,6 +5,8 @@ import * as pkg from "./package.json";
 
 import typescript from '@rollup/plugin-typescript';
 
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+
 const input = 'src/index.ts';
 
 export default [
@@ -19,6 +21,7 @@ export default [
   //   plugins: [
   //     json(),
   //     // terser(),
+  //     nodeResolve(),
   //     typescript(),
   //     // typescript({ compilerOptions: {lib: ["es5", "es6", "dom"], target: "es5"}})
   //   ],
@@ -28,12 +31,14 @@ export default [
     output: {
       name: pkg.main,
       file: 'dist/index.esm.js',
+      // dir: 'dist',
       format: 'esm',
     },
-    external: ['lit'],
+    // external: ['lit'],
     plugins: [
       // json(),
       // terser(),
+      nodeResolve(),
       typescript(),
     ],
   },
@@ -42,12 +47,15 @@ export default [
     output: {
       name: pkg.browser,
       file: 'dist/index.umd.js',
+      // dir: 'dist',
       format: 'umd',
+      // globals: 'lit',
     },
-    external: ['lit'],
+    // external: ['lit'],
     plugins: [
       // json(),
       // terser(),
+      nodeResolve(),
       typescript(),
     ],
   },
