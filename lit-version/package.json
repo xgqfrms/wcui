@@ -1,6 +1,6 @@
 {
   "name": "lit-wcui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "lit version wcui 🚀",
   "main": "./dist/index.esm.js",
   "browser": "./dist/index.umd.js",

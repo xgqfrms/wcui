@@ -37,6 +37,27 @@ import 'lit-wcui';
 
 ```
 
+```js
+// react
+export default function App() {
+  return (
+    <div className="App">
+      <wcui-element></wcui-element>
+      <wcui-element version="1.0.0"></wcui-element>
+      <div>
+        <a
+          href="https://www.npmjs.com/package/lit-wcui"
+          alt="lit-wcui"
+          title="lit-wcui"
+        >
+          https://www.npmjs.com/package/lit-wcui
+        </a>
+      </div>
+    </div>
+  );
+}
+```
+
 2. CDN
 
 > load any project hosted on npm
