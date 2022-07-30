@@ -21,6 +21,9 @@ $ npm i -S @xgqfrms/wcui
 
 https://www.npmjs.com/package/@xgqfrms/wcui
 
+> lit version
+
+https://www.npmjs.com/package/lit-wcui
 
 ## usage
 
