@@ -104,3 +104,4 @@ typings/
 .tern-port
 
 000-xyz/
+.npmrc
