@@ -12,6 +12,9 @@
     "test": "echo \"✅ no need test\" && exit 0",
     "old-test": "echo \"Error: no test specified\" && exit 1"
   },
+  "publishConfig": {
+    "@xgqfrms:registry": "https://npm.pkg.github.com"
+  },
   "files": [
     "dist/*",
     "package.json",
