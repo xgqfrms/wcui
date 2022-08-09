@@ -9,7 +9,8 @@
     "dev-all": "rollup --watch --config rollup.config.dev.js",
     "build": "rollup -c",
     "build-all": "rollup --config rollup.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"✅ no need test\" && exit 0",
+    "old-test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
     "dist/*",
