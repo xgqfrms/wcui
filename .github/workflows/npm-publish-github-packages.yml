@@ -36,5 +36,5 @@ jobs:
           # NPM_TOKENN for publish npm package ✅ https://registry.npmjs.org/
           # NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
           # GITHUB_TOKEN for publish  GitHub Package ✅ registry=https://npm.pkg.github.com
-          # GITHUB_TOKEN 是一个默认 keyword ???
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          # GITHUB_TOKEN 是一个默认 keyword ❌, 是一个自定义的 PAT https://github.com/orgs/community/discussions/28844
+          NODE_AUTH_TOKEN: ${{secrets.NPM_GITHUB_TOKEN}}
