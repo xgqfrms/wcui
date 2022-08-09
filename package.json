@@ -1,6 +1,6 @@
 {
   "name": "@xgqfrms/wcui",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Web Components UI",
   "main": "./dist/wcui/index.min.js",
   "browser": "./dist/wcui/index.umd.js",
@@ -11,9 +11,6 @@
     "build-all": "rollup --config rollup.config.js",
     "test": "echo \"✅ no need test\" && exit 0",
     "old-test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   },
   "files": [
     "dist/*",
